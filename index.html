@@ -9,74 +9,90 @@
 </head>
 <body>
     <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./logo.jpeg" alt="" width="140" height="90">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a> <!-- Updated -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Course">Program</a> <!-- Updated -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a> <!-- No change needed -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact Us</a> <!-- Correct "id" to match -->
-                    </li>
-                </ul>                
-                <div class="dropdown">
-                    <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./login-2.jpeg" alt="" class="rounded-circle" width="50" height="50">
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#profile">Profile</a></li>
-                        <li><a class="dropdown-item" href="#settings">Settings</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#logout">Logout</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./logo.jpeg" alt="" width="140" height="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="programDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Program
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                                <li><a class="dropdown-item" href="#program1">Program 1</a></li>
+                                <li><a class="dropdown-item" href="#program2">Program 2</a></li>
+                                <li><a class="dropdown-item" href="#program3">Program 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#service1">Service 1</a></li>
+                                <li><a class="dropdown-item" href="#service2">Service 2</a></li>
+                                <li><a class="dropdown-item" href="#service3">Service 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact Us</a>
+                        </li>
                     </ul>
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./login-2.jpeg" alt="" class="rounded-circle" width="50" height="50">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#profile">Profile</a></li>
+                            <li><a class="dropdown-item" href="#settings">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#logout">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </div>
+
     <!-------------------------------------------home----------------------------------->
-    <section id="Home" class="team section-padding">
+<section id="Home" class="team section-padding">
     <div class="container mt-5 video-section">
         <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="left-content">
-                    <h2>Informative Content</h2>
-                    <p>
-                        Add your descriptive or supporting text here. 
-                        This could be a description, a summary, or other relevant information 
-                        related to the video on the right.
-                    </p>
-                    <p>
-                        Engage your users with meaningful content while they view your video.
-                    </p>
-                </div>
-            </div>
             <div class="col-md-6">
                 <div class="video-wrapper">
-                    <video controls>
-                        <source src="(908) Explainer Video for Edtech Company_ ExtraMarks _ 2D Character Animation - YouTube - Google Chrome 2024-12-02 22-34-42.mp4" type="video/mp4">
+                    <video controls autoplay muted>
+                        <source src="./INTROVIDEO.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="left-content">
+                    <h2>Informative Content</h2>
+                    <p>
+                        Future of your child. Our platform's integrated course structure, which combines academic excellence, career guidance, and life skills, is designed to empower.
+                    </p>
+                    <p>
+                        మీ పిల్లల కలలను , వారి భవిష్యత్‌ను గొప్పగా తీర్చిదిద్దేందుకు మేము శ్రద్ధ వహిస్తాము.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    </section>
-    <!------------------------------------course------------------------------------------->
-    <section id="Course" class="team section-padding">
+</section>
+
+ <section id="Course" class="team section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -139,16 +155,16 @@
                         <div class="d-flex justify-content-center">
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">John Doe</h3>
-                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
                                 </div>
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Jane Doe</h3>
@@ -157,7 +173,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Jane Doe</h3>
@@ -166,7 +182,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Mark Smith</h3>
@@ -180,7 +196,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Alice Johnson</h3>
@@ -189,7 +205,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Jane Doe</h3>
@@ -198,7 +214,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Tom Lee</h3>
@@ -207,7 +223,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Emma Brown</h3>
@@ -221,7 +237,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Sophia Carter</h3>
@@ -230,7 +246,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Jane Doe</h3>
@@ -239,7 +255,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Liam Davis</h3>
@@ -248,7 +264,7 @@
                             </div>
                             <div class="card text-center bg-white p-3 mx-3">
                                 <div class="card-body text-dark">
-                                    <div class="img-area mb-4">
+                                    <div class="img-area mb-2">
                                         <img src="mine.jpg" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <h3 class="card-title">Olivia Wilson</h3>
@@ -258,6 +274,7 @@
                         </div>
                     </div>
                 </div>
+            
                 <!-- Carousel Controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -268,13 +285,87 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <!-- Integrated Image -->
+            <div class="image-row text-center mt-5">
+                <img src="./image.jpeg" alt="Image 1" class="img-fluid rounded">
+            </div>
         </div>
     </section>
-    <div class="container">
-    <div class="image-row">
-        <img src="./image.jpeg" alt="Image 1">
-    </div>
+
+    <!-----------------------------footer----------------------------->
+    <section id="contact" class="team section-padding">
+        <div class="container">
+            <!-- Contact Info -->
+            <div class="row">
+                <div class="col-md-6 contact-info">
+                    <h2>Contact Us</h2>
+                    <p><strong>Address:</strong> Revenue Colony, Kamakshinagar Road, Vizianagaram, Andhra Pradesh-535003</p>
+                    <p><strong>Email:</strong> <a href="mailto:tyoungminds@gmail.com">tyoungminds@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +91 9398253706</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">&#xf09a;</a>
+                        <a href="#" aria-label="Instagram">&#xf16d;</a>
+                        <a href="#" aria-label="LinkedIn">&#xf0e1;</a>
+                        <a href="#" aria-label="YouTube">&#xf167;</a>
+                    </div>
+                </div>
     
-     </div>
+                <!-- Contact Form -->
+                <div class="col-md-6 contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="contact.php" method="POST">
+                        <input type="text" name="first_name" placeholder="First Name" required>
+                        <input type="text" name="last_name" placeholder="Last Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="phone" placeholder="Phone">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <!-- Course Offerings -->
+                    <div class="col-md-4 footer-section">
+                        <h3>Course Offerings</h3>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Online Classes</a></li><br>
+                            <li class="list-inline-item"><a href="#">Skill Development</a></li><br>
+                            <li class="list-inline-item"><a href="#">Govt & Pvt Jobs</a></li><br>
+                            <li class="list-inline-item"><a href="#">State Syllabus</a></li><br>
+                            <li class="list-inline-item"><a href="#">Career Guidance</a></li><br>
+                            <li class="list-inline-item"><a href="#">Goal Oriented</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Subjects -->
+                    <div class="col-md-4 footer-section">
+                        <h3>Subjects</h3>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Physics</a></li><br>
+                            <li class="list-inline-item"><a href="#">Math</a></li><br>
+                            <li class="list-inline-item"><a href="#">Chemistry</a></li><br>
+                            <li class="list-inline-item"><a href="#">Biology</a></li><br>
+                        </ul>
+                    </div>
+    
+                    <!-- Address -->
+                    <div class="col-md-4 footer-section">
+                        <h3>Address</h3>
+                        <p>Revenue Colony, Kamakshinagar Road, Vizianagaram, Andhra Pradesh-535003</p>
+                        <p>+91 9398253706</p>
+                        <p>
+                            3rd Floor, H Block,<br>
+                            Gateshwkar Road,<br>
+                            Township, Pocharam, Hyderabad 560041
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    
 </body>
 </html>
