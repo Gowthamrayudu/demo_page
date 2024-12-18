@@ -4,8 +4,12 @@ body {
 }
 
 .container {
-    background-color: #00008B; 
+    background-color: #4682b4; 
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Header Styling */
 .header {
@@ -41,17 +45,17 @@ body {
 
 .left-content h2 {
     text-align: center;
-    color: #333;
+    color: hwb(60 97% 2% / 0.991);
 }
 
 .left-content p {
-    color: #444; /* Better readability */
+    color: #fcf9f9; /* Better readability */
 }
 
 /* Services Section */
 #Course {
    
-    color: white;
+    color: white !important;
     padding-block: 60px 0;
 }
 
@@ -59,6 +63,10 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #f5eded;
+}
+#Course h5{
+    color: #050404;
+    font-weight: bold;
 }
 
 #Course p {
@@ -69,7 +77,7 @@ body {
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 330px;
     height: 300px;
     display: flex;
@@ -77,6 +85,8 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: #09090a;
 }
 
 .card i {
@@ -94,7 +104,7 @@ body {
 }
 
 /* About Section */
-#About {
+#About us {
     padding: 60px 0;
     background-color: #f8f9fa;
 }
@@ -172,12 +182,365 @@ body {
 }
 
 #About .carousel-control-prev,
-#About .carousel-control-next {
-    width: 50px;
-    height: 50px;
+#About .carousel-con/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
 }
-.image-row {
-    display: inline;
-    justify-content: space-between;
+
+.container {
+    background-color: #4682b4; 
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #00008B; /* Dark blue */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Visible white text */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important; /* Gold hover effect */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background-color: #f8f9fa; /* Light background for dropdown */
+    border: none;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    color: black !important; /* Black text for internal dropdowns */
+    font-weight: 500;
+    padding: 8px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #ffd700; /* Gold highlight for dropdown items */
+    color: black !important; /* Text stays black on hover */
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #ddd; /* Subtle divider */
+    margin: 8px 0;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
     width: 100%;
-  }
+    padding-top: 60.25%; /* 16:9 aspect ratio */
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.left-content h2 {
+    text-align: center;
+    color: #ffffe0;
+}
+
+.left-content p {
+    color: #fcf9f9; /* Better readability */
+}
+
+/* Services Section */
+#Course {
+    color: white !important;
+    padding: 60px 0;
+}
+
+#Course h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5eded;
+}
+#Course h5 {
+    color: #050404;
+    font-weight: bold;
+}
+
+#Course p {
+    font-size: 1rem;
+    color: #09090a; /* Subtle text */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 10px;
+    width: 330px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 50px;
+    color: #ffd700; /* Gold icons */
+}
+
+.icon-button {
+    margin-top: 15px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+    background-color: #daa520; /* Darker gold on hover */
+}
+
+
+
+#About {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#About h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#About p {
+    color: #666;
+}
+
+#About .card {
+    width: 150px;
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#About .card img {
+    width: 80px; /* Scaled size for better fit */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+    margin-bottom: 10px;
+}
+
+#About .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+#About .lead {
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* About Section Carousel */
+#About .carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+#About .carousel-control-prev-icon,
+#About .carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+}
+
+#About .carousel-control-prev-icon::after,
+#About .carousel-control-next-icon::after {
+    color: #fff;
+}
+
+/* Integrated Image */
+.image-row img {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Section: Contact */
+#contact {
+    background-color: #4682b4; /* Theme color */
+    color: white; /* Contrast text */
+    padding: 40px 20px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contact .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#contact .contact-info {
+    flex: 1 1 45%;
+}
+
+#contact .contact-info p {
+    margin-bottom: 10px;
+}
+
+#contact .social-icons a {
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact .social-icons a:hover {
+    color: #87CEFA; /* Light blue on hover */
+}
+
+#contact .contact-form {
+    flex: 1 1 45%;
+}
+
+#contact .contact-form form input,
+#contact .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#contact .contact-form form button {
+    width: 100%;
+    background-color: white;
+    color: #4682b4;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact .contact-form form button:hover {
+    background-color: #87CEFA;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #4682b4;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .footer-section {
+    flex: 1 1 20%; /* Flexible layout for sections */
+    min-width: 250px; /* Prevent shrinking too small */
+}
+
+footer .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin: 5px 0;
+}
+
+footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section ul li a:hover {
+    color: #87CEFA;
+}
+
+footer .payment-methods img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+footer .social-icons a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #87CEFA;
+}
+
+footer .address p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #contact .contact-container,
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        flex: 1 1 100%; /* Stack sections vertically */
+    }
+}
